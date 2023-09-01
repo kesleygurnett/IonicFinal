@@ -1,0 +1,7 @@
+{
+  "name": "IonicFinal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

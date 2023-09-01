@@ -1,0 +1,23 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let chapter of chapters">
+            <ion-item [routerDirection]="'root'" [routerLink]="['/toc']">
+              <ion-label>
+                {{chapter.title}}
+              </ion-label>
+             </ion-item>
+          </ion-menu-toggle>        
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  </ion-split-pane>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
